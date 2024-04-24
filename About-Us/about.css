@@ -1,0 +1,77 @@
+/* About Us */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    /* background colornya ganti aja */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.about_us {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+}
+
+.xxi_image1 {
+    display: flex;
+    flex-direction: column;
+    /* margin: 2vh; */
+}
+
+.xxi_image1 img {
+    width: 920px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xxi_image1 p {
+    display: flex;
+    color: #000000;
+    font-weight: normal;
+    font-size: 18px;
+    width: 920px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.xxi_image2 {
+    display: flex;
+    flex-direction: column;
+    /* margin: 2vh; */
+}
+
+.xxi_image2 img {
+    width: 920px;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xxi_image2 p {
+    display: flex;
+    color: #000000;
+    font-weight: normal;
+    font-size: 18px;
+    width: 920px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}

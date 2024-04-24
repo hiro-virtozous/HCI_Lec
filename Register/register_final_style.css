@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px ;
+    background-image: linear-gradient(to left, #1b4248, #9d8248);
+}
+
+.background {
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+    background: #1b4248;
+}
+
+.background::after {
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: #9d8248;
+}
+
+
+.container{
+    overflow: hidden;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    /* padding: 25px; */
+    padding: 25px 30px 54px;
+    border-radius: 24px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .logo{
+    position: relative;
+    margin-top: auto;
+    width: 250px;
+    height: 100px;
+    margin: 0px 15px;
+    background-image: url('assets/Cinema_XXI.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.container header{
+    font-size: 1.5rem;
+    color: #1b4248;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.container .form{
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label{
+    color: #1b4248;
+    font-weight: 500;
+}
+
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: #1b4248;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .gender-box{
+    margin-top: 20px;
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender{
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.address :where(input, .select-box){
+    margin-top: 15px;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form > .btn-hover {
+    place-items: center;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    margin: 15px 0 5px;
+
+    border-radius: 28px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.form > .btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.form > .btn-hover:focus {
+    outline: none;
+}
+
+.form > .btn-hover.color-a {
+    background-image: linear-gradient(to right, #1b4248, #9d8248, #d9bc7f, #efd69f);
+    box-shadow: 0 4px 15px 0 #1b4248;
+}
+
+@media screen and (max-width: 500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.form :where(.gender-option, .gender){
+    row-gap: 15px;
+}
+
+
+.column-prov{
+    color: #1b4248;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.column-city{
+    color: #1b4248;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+
+.divider {
+	margin-top: 5vh;
+	margin-bottom: 0.5rem;
+	color: #666;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+    text-align: center;
+}
+
+.googleimg{
+    width: 50px;
+    height: 50px;
+    margin: 3px 5px;
+    background-image: url('assets/logoGoogle.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container .form .loginGoogle{
+    place-items: center;
+    padding: 0 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    border:  0px solid #000000;
+    background-size: 300% 100%;
+    margin: 30px 0 10px;
+
+    border-radius: 28px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: flex;
+}
+
+.container .form .loginGoogle:hover{
+    box-shadow: 0 0 0 2px #ededed, 0 0 0 6px #1b4248;
+}
+
+.log {
+    color: rgb(211, 140, 152); 
+    font-size: small;
+}
+
+@media (width >= 500px) {
+    .container .form .loginGoogle {
+    padding: 0 200px;
+    }
+    .container .logo{
+        width: 550px;
+        margin: 0px 50px;
+    }
+}
+
+hr {
+    margin: 10px;
+    border: 5px solid #9d8248;
+    border-radius: 5px;
+}

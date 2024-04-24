@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.body_box {
+    height: 85vh;
+    width: 100vw;
+}
+
+.container-box{
+    font-family: 'Times New Roman', Times, serif;
+    border: #9d8248 solid 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #122d31;
+    width: 85vw;
+    height: 80vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topper{
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+.topper span{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.Braga-XXI{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.Braga-XXI .address span{
+    margin-left: 5%;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Braga-XXI img {
+    border-radius: 10px;
+    width: 60%;
+    height: 100%;
+}
+
+.Braga-XXI .container-map{
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 30vw;
+    height: 40vh;
+}
+
+.map{
+    border-radius: 10px;
+}

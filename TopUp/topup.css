@@ -1,0 +1,347 @@
+/* Top Up */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    /* background colornya ganti aja */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.outerborder {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.innerborder {
+    height: fit-content;
+    width: 800px;
+    box-shadow: 0 0 5px 5px rgb(124, 124, 124);
+    margin: 50px;
+    border-radius: 20px;
+}
+
+
+.text_pilihnominal {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.col_nominal_1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#nominal1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#nom1_indicator {
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.nom1_square {
+    height: 60px;
+    width: 180px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#nominal2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#nom2_indicator {
+    float: left;
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.nom2_square {
+    height: 60px;
+    width: 180px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#nominal3 {
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#nom3_indicator {
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.nom3_square {
+    height: 60px;
+    width: 180px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+.col_nominal_2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#nominal4 {
+    display: flex;
+    flex-direction: row;
+}
+
+#nom4_indicator {
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.nom4_square {
+    height: 60px;
+    width: 180px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#nominal5 {
+    display: flex;
+    flex-direction: row;
+}
+
+#nom5_indicator {
+    float: left;
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.nom5_square {
+    height: 60px;
+    width: 180px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#nominal6 {
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#nom6_indicator {
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.nom6_square {
+    height: 60px;
+    width: 180px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#tulisnominal {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#tulis_indicator {
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.inputNominal {
+    height: 60px;
+    width: 650px;
+    border-width: 1px;
+    font-size: 24px;
+    padding-left: 25px;
+}
+
+.text_pilihmetode {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#metode1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#met1_indicator {
+    height: 60px;
+    width: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    background-color: rgb(126, 126, 126);
+}
+
+.met1_square {
+    height: 60px;
+    width: 700px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.nominal_fin {
+    margin-left: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.metode_fin {
+    margin-left: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#tombolbayar {
+    margin-left: 50px;
+    width: 200px;
+    height: 60px;
+    background-color: #1b4248;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+#tombolbayar p {
+    font-size: 24px;
+    color: #ffd57a;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Element Animation */
+#nominal1:hover {
+    cursor: pointer;
+}
+
+#nominal2:hover {
+    cursor: pointer;
+}
+
+#nominal3:hover {
+    cursor: pointer;
+}
+
+#nominal4:hover {
+    cursor: pointer;
+}
+
+#nominal5:hover {
+    cursor: pointer;
+}
+
+#nominal6:hover {
+    cursor: pointer;
+}
+
+#tulisnominal:hover {
+    cursor: pointer;
+}
+
+#metode1:hover {
+    cursor: pointer;
+}
+
+#tombolbayar:hover {
+    cursor: pointer;
+}

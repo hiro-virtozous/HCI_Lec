@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register_final_style.css">
+    <script src="script_register.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="logo"></div>
+        <header>Registration XXI Account</header>
+        <hr></hr>
+        <form action="#" class="form" id="form">
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter full name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="text" placeholder="Enter email" id="email"required>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="number" placeholder="Enter Phone Number" required>
+                </div>
+
+                
+                <div class="input-box">
+                    <label>Birth Date</label>
+                    <input type="date" placeholder="Enter full name" required>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="gender" checked>
+                            <label for="check-male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="gender">
+                            <label for="check-female">Female</label>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="input-box address">
+                <label>Address</label>
+                <input type="text" placeholder="Correspondence address based on ID/KTP" required>
+            </div>
+            <div class="column-prov ">
+                <label>Province</label>
+                <div class="select-box">
+                    <select id="namaProvinsi">
+                        <option value="0">Province</option>
+                        <option value="dki">DKI JAKARTA</option>
+                        <option value="jawa_barat">JAWA BARAT</option>
+                        <option value="banten">BANTEN</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column-city ">
+                <label>City</label>
+                <div class="select-box">
+                    <select id="kosong">
+                        <option value="">City</option>
+                    </select>
+                    <select id="dki_id">
+                        <option value="jakarta_barat">KOTA JAKARTA BARAT</option>
+                        <option value="jakarta_timur">KOTA JAKARTA TIMUR</option>
+                        <option value="jakarta_utara">KOTA JAKARTA UTARA</option>
+                        <option value="jakarta_selatan">KOTA JAKARTA SELATAN</option>
+                    </select>
+                    <select id="jawa_barat_id">
+                        <option value="">KABUPATEN BOGOR</option>
+                        <option value="">KOTA BOGOR</option>
+                        <option value="">KOTA DEPOK</option>
+                        <option value="">KABUPATEN BEKASI</option>
+                        <option value="">KOTA BEKASI</option>
+                    </select>
+                    <select id="banten_id">
+                        <option value="">KOTA TANGERANG</option>
+                        <option value="">KOTA TANGERANG SELATAN</option>
+                        <option value="">KABUPATEN TANGERANG</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box" >
+                <label>PIN/Password</label>
+                <input type="password" placeholder="Your password" id="password" required>
+            </div>
+            <div class="input-box" >
+                <label>Re-type PIN/Password</label>
+                <input type="password" placeholder="Re-type Your password" id="confirm-password" required>
+            </div>
+
+            <p class="log" id="error">*</p>
+
+            <button type="submit" class="btn-hover color-a">Submit</button>
+            <div class="divider">OR</div>
+            <button type="button" class="loginGoogle">
+                <div class="googleimg"></div>
+                Sign up with Google
+            </button>
+        </form>
+    </div>
+</body>
+</html>

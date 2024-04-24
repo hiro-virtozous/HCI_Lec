@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="theatre.js"></script>
+    <link rel="stylesheet" href="theatre.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="main-nav">
+
+            <div class="container">
+                <div class="title">
+                    <img src="XXI-Aset/Logo xx1.png" class="icon">
+                </div>
+
+
+                <div class="manage">
+                    <div class="search">
+
+                        <div class="search-bar">
+                            <form action="" id="search">
+                                <input type="text" class="input" placeholder="Search" id="search">
+                            </form>
+                        </div>
+                        <div class="menu">
+                            <a href="/XXI.html">
+                                <div class="now-playing">
+                                    <span></span>NOW PLAYING
+                                </div>
+                            </a>
+
+                            <a href="/UP COMING/upcoming.html">
+                                <div class="upcoming">
+                                    <span></span>UPCOMING
+                                </div>
+                            </a>
+
+                            <a href="/Theatre/theatre.html">
+                                <div class="theatres">
+                                    <span></span>THEATRES
+                                </div>
+                            </a>
+
+                            <a href="/About-Us/about.html">
+                                <div class="about-us">
+                                    <span></span>ABOUT US
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="sub-manage">
+                <div class="account">
+                    <div class="user">
+                        <div class="asset-user">
+                            <img src="XXI-Aset/user icon.png" class="user-img" id="user-click">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sub-menu" id="acc-menu">
+            <div class="account-menu">
+
+                <a href="/Login/Login.html">
+                    <div class="Login">
+                        <span>LOGIN</span>
+                        <div class="background1"></div>
+                    </div>
+                </a>
+
+                <a href="/Register/register_final.html">
+                    <div class="Register">
+                        <span>REGISTER</span>
+                        <div class="background2"></div>
+                    </div>
+                </a>
+
+                <a href="/TopUp/topup.html">
+                    <div class="Top-up">
+                        <span>TOP UP</span>
+                        <div class="background3"></div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="sub-menu" id="acc-menu">
+        <div class="account-menu">
+
+            <a href="#login">
+                <div class="Login">
+                    <span>LOGIN</span>
+                    <div class="background1"></div>
+                </div>
+            </a>
+
+            <a href="#register">
+                <div class="Register">
+                    <span>REGISTER</span>
+                    <div class="background2"></div>
+                </div>
+            </a>
+
+            <a href="/TopUp/topup.html">
+                <div class="Top-up">
+                    <span>TOP UP</span>
+                    <div class="background3"></div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    
+    <div class="main_container">
+        <div class="city-change">
+            <button class="dropbtn" onclick="toggleDropdown()">
+                <span id="locationText">BANDUNG</span><span class="arrow">&#9662;</span>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#AMBON" onclick="changeLocation('AMBON')">AMBON</a>
+                <a href="#BALIKPAPAN" onclick="changeLocation('BALIKPAPAN')">BALIKPAPAN</a>
+                <a href="#BANDUNG" onclick="changeLocation('BANDUNG')">BANDUNG</a>
+                <a href="#BANJARMASIN" onclick="changeLocation('BANJARMASIN')">BANJARMASIN</a>
+                <a href="#BATAM" onclick="changeLocation('BATAM')">BATAM</a>
+                <a href="#BEKASI" onclick="changeLocation('BEKASI')">BEKASI</a>
+                <a href="#BENGKULU" onclick="changeLocation('BENGKULU')">BENGKULU</a>
+                <a href="#BOGOR" onclick="changeLocation('BOGOR')">BOGOR</a>
+                <a href="#BONDOWOSO" onclick="changeLocation('BONDOWOSO')">BONDOWOSO</a>
+                <a href="#BONTANG" onclick="changeLocation('BONTANG')">BONTANG</a>
+                <a href="#CIANJUR" onclick="changeLocation('CIANJUR')">CIANJUR</a>
+                <a href="#CIKARANG" onclick="changeLocation('CIKARANG')">CIKARANG</a>
+                <a href="#CILEGON" onclick="changeLocation('CILEGON')">CILEGON</a>
+                <a href="#CIREBON" onclick="changeLocation('CIREBON')">CIREBON</a>
+                <a href="#DENPASAR" onclick="changeLocation('DENPASAR')">DENPASAR</a>
+                <a href="#DEPOK" onclick="changeLocation('DEPOK')">DEPOK</a>
+                <a href="#DUMAI" onclick="changeLocation('DUMAI')">DUMAI</a>
+                <a href="#GARUT" onclick="changeLocation('GARUT')">GARUT</a>
+                <a href="#GORONTALO" onclick="changeLocation('GORONTALO')">GORONTALO</a>
+                <a href="#GRESIK" onclick="changeLocation('GRESIK')">GRESIK</a>
+                <a href="#JAKARTA" onclick="changeLocation('JAKARTA')">JAKARTA</a>
+                <a href="#JAMBI" onclick="changeLocation('JAMBI')">JAMBI</a>
+                <a href="#JAYAPURA" onclick="changeLocation('JAYAPURA')">JAYAPURA</a>
+                <a href="#JEMBER" onclick="changeLocation('JEMBER')">JEMBER</a>
+                <a href="#KARAWANG" onclick="changeLocation('KARAWANG')">KARAWANG</a>
+                <a href="#KEDIRI" onclick="changeLocation('KEDIRI')">KEDIRI</a>
+                <a href="#KENDARI" onclick="changeLocation('KENDARI')">KENDARI</a>
+                <a href="#KISARAN" onclick="changeLocation('KISARAN')">KISARAN</a>
+                <a href="#KUALA KAPUAS" onclick="changeLocation('KUALA KAPUAS')">KUALA KAPUAS</a>
+                <a href="#KUPANG" onclick="changeLocation('KUPANG')">KUPANG</a>
+                <a href="#LAMPUNG" onclick="changeLocation('LAMPUNG')">LAMPUNG</a>
+                <a href="#MADIUN" onclick="changeLocation('MADIUN')">MADIUN</a>
+                <a href="#MAKASSAR" onclick="changeLocation('MAKASSAR')">MAKASSAR</a>
+                <a href="#MALANG" onclick="changeLocation('MALANG')">MALANG</a>
+                <a href="#MANADO" onclick="changeLocation('MANADO')">MANADO</a>
+                <a href="#MANOKWARI" onclick="changeLocation('MANOKWARI')">MANOKWARI</a>
+                <a href="#MATARAM" onclick="changeLocation('MATARAM')">MATARAM</a>
+                <a href="#MEDAN" onclick="changeLocation('MEDAN')">MEDAN</a>
+                <a href="#PADANG" onclick="changeLocation('PADANG')">PADANG</a>
+                <a href="#PALANGKARAYA" onclick="changeLocation('PALANGKARAYA')">PALANGKARAYA</a>
+                <a href="#PALEMBANG" onclick="changeLocation('PALEMBANG')">PALEMBANG</a>
+                <a href="#PALU" onclick="changeLocation('PALU')">PALU</a>
+                <a href="#PANGKAL PINANG" onclick="changeLocation('PANGKAL PINANG')">PANGKAL PINANG</a>
+                <a href="#PEKALONGAN" onclick="changeLocation('PEKALONGAN')">PEKALONGAN</a>
+                <a href="#PEKANBARU" onclick="changeLocation('PEKANBARU')">PEKANBARU</a>
+                <a href="#PONTIANAK" onclick="changeLocation('PONTIANAK')">PONTIANAK</a>
+                <a href="#RANTAU PRAPAT" onclick="changeLocation('RANTAU PRAPAT')">RANTAU PRAPAT</a>
+                <a href="#ROKAN HILIR" onclick="changeLocation('ROKAN HILIR')">ROKAN HILIR</a>
+                <a href="#SAMARINDA" onclick="changeLocation('SAMARINDA')">SAMARINDA</a>
+                <a href="#SEMARANG" onclick="changeLocation('SEMARANG')">SEMARANG</a>
+                <a href="#SIDOARJO" onclick="changeLocation('SIDOARJO')">SIDOARJO</a>
+                <a href="#SINGKAWANG" onclick="changeLocation('SINGKAWANG')">SINGKAWANG</a>
+                <a href="#SOLO" onclick="changeLocation('SOLO')">SOLO</a>
+                <a href="#SORONG" onclick="changeLocation('SORONG')">SORONG</a>
+                <a href="#SUMEDANG" onclick="changeLocation('SUMEDANG')">SUMEDANG</a>
+                <a href="#SURABAYA" onclick="changeLocation('SURABAYA')">SURABAYA</a>
+                <a href="#TANGERANG" onclick="changeLocation('TANGERANG')">TANGERANG</a>
+                <a href="#TANJUNG PINANG" onclick="changeLocation('TANJUNG PINANG')">TANJUNG PINANG</a>
+                <a href="#TARAKAN" onclick="changeLocation('TARAKAN')">TARAKAN</a>
+                <a href="#TASIKMALAYA" onclick="changeLocation('TASIKMALAYA')">TASIKMALAYA</a>
+                <a href="#TERNATE" onclick="changeLocation('TERNATE')">TERNATE</a>
+                <a href="#YOGYAKARTA" onclick="changeLocation('YOGYAKARTA')">YOGYAKARTA</a>
+            </div>
+        </div>
+        <div class="bigContainer">
+            <div class="container1">
+                <div class="head-content">
+                    <img src="XXI-Aset/Cinema XXI Logo.png" class="cinema21">
+                    <img src="XXI-Aset/The Premiere Logo.png" class="premiere">
+                    <img src="XXI-Aset/Imax Logo.png" class="imax">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="ContainerS left">
+                    <div class="left table">
+                        <a href="/Braga/braga-XXI.html" class="left data">BRAGA XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">BTC XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">CIWALK XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">EMPIRE XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">FESTIVAL CITYLINK XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">JATOS XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">SUMMARECON MALL XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">THEE MATIC MALL XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">TRANSMART BUAH BATU XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">TSM XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                    <div class="left table">
+                        <a href="#MargondaXXI" class="left data">UBERTOS XXI</a>
+                        <a href="#MargondaXXI" class="right data">(021)50723029</a>
+                    </div>
+                </div>
+                <div class="ContainerS mid">
+                    <div class="mid table">
+                        <a href="#PluitPremiere" class="left data">CIWALK PREMIERE</a>
+                        <a href="#PluitPremiere" class="right data">(021)40843019</a>
+                    </div>
+                    <div class="mid table">
+                        <a href="#PluitPremiere" class="left data">SUMMARECON MALL PREMIERE</a>
+                        <a href="#PluitPremiere" class="right data">(021)40843019</a>
+                    </div>
+                </div>
+                <div class="ContainerS right">
+                    <div class="right table">
+                        <a href="#GandariaCityIMAX" class="left data">SUMMARECON MALL IMAX</a>
+                        <a href="#GandariaCityIMAX" class="right data">(021)20329202</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="border">
+            <div class="text">
+                <div class = "upper">
+                    <div class="footer">
+                        <a href="#">About Us</a>
+                        <h2>|</h2>
+                        <a href="#">Terms of Use</a>
+                        <h2>|</h2>
+                        <a href="#">Contact Us</a>
+                        <h2>|</h2>
+                        <a href="#">Advertising</a>
+                    </div>
+    
+                    <div class="icon-footer">
+                        <a href="https://www.instagram.com/cinema.21/?hl=id"><img src="XXI-Aset/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/cinema21/?locale=id_ID"><img src="XXI-Aset/facebook.png" alt="Facebook"></a>
+                        <a href="https://indonesia.fb.com"><img src="XXI-Aset/meta.png" alt="Meta"></a>
+                        <a href="https://www.youtube.com/channel/UCudik2UCrl1TGyyPZ2I9Pvg"><img src="XXI-Aset/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                
+                <div class="lower">
+                    <p>© 1999-2012 21Cineplex.com. All materials and contents (texts, graphics, and every attributes) of 21Cineplex or 21Cineplex.com website are copyrights and trademarks of PT Nusantara Sejahtera Raya.Any commercial usage of the materials and contents is forbidden without prior permission from PT Nusantara Sejahtera Raya. There is no other institutions/agencies outside PT Nusantara Sejahtera Raya allowed to use www.21Cineplex.com (21Cineplex website) without prior permission from PT Nusantara Sejahtera Raya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
