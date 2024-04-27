@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>UP COMING</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <script defer src = "upcoming.js"></script>
+    <script defer src = "navbar.js"></script>
+    <link rel="stylesheet" href="upcoming.css">
+    <link rel="stylesheet" href = "navbar.css">
+    <link rel="stylesheet" href = "upcoming_2.css">
+    <link rel="stylesheet" href = "footer.css">
+    <link rel="stylesheet" href = "viewmore.css">
+</head>
+<body>
+    <div class = "navbar" id = "navbar">
+        <div class = "main-nav">
+            
+            <div class = "container">
+                <div class = "title">
+                    <img src = "Asset/Logo xx1.png" class = "icon">
+                </div>
+                
+                
+                <div class = "manage">
+                    <div class = "search">
+
+                        <div class = "search-bar">
+                            <form action="" id="search">
+                                <input type="text" class="input" placeholder="Search" id = "search">
+                            </form>
+                        </div>
+                        <div class = "menu">
+                            <a href = "#">
+                                <div class = "home">
+                                    <span></span>HOME
+                                </div>
+                            </a>
+
+                            <a href = "#2">
+                                <div class = "now-playing">
+                                    <span></span>NOW PLAYING
+                                </div>
+                            </a>
+
+                            <a href = "#3">
+                                <div class = "upcoming">
+                                    <span></span>UPCOMING
+                                </div>
+                            </a>
+
+                            <a href = "#4">
+                                <div class = "theatres">
+                                    <span></span>THEATRES
+                                </div>
+                            </a>
+
+                            <a href = "#5">
+                                <div class = "about-us">
+                                    <span></span>ABOUT US
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                
+                
+            </div>
+
+            <div class = "sub-manage">
+                <div class = "account">
+                    <div class = "user">
+                        <div class = "asset-user">
+                            <img src = "Asset/user icon.png" class = "user-img" id = "user-click">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        
+        <div class = "sub-menu open" id = "acc-menu">
+            <div class = "account-menu" id = "account">
+                    
+                <a href="#login" id = 'Login'>
+                    <div class="Login">
+                        <span>LOGIN</span>
+                        <div class="background1"></div>
+                    </div>
+                </a>
+                
+                <a href="#register" id = "Regis">
+                    <div class="Register">
+                        <span>REGISTER</span>
+                        <div class="background2"></div>
+                    </div>
+                </a>
+                
+                <a href="#top-up" id = "Tops">
+                    <div class="Top-up">
+                        <span>TOP UP</span>
+                        <div class="background3"></div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- IKLAN YG DIATAS -->
+    <div class = "iklan-atas">
+        <div>
+            <span id = "overlay"></span>
+            <div class = "video-container">
+                <video muted id="video" class="trailer" controls>
+                    <source src="Asset/Inside Out 2 Trailer.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- ini yg buat more info -->
+            <div id = "iklan">
+                <div id = "iklan-bungkus">
+                    <div class = "trailer-inside">
+                        <video muted id="video-inside" class="trailer-inside-out"  controls>
+                            <source src="Asset/Inside Out 2 Trailer.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div id = "inside-out-description">
+                        <div class = "description-container">
+                            <div class = "left-desc">
+                                <div class = "movie-year-duration">
+                                    <p>Juni 2024</p>
+                                    <p>1j 35m</p>
+                                </div>
+
+                                <div class = "movie-age-rating">
+                                    <div class = "movie-age-border">
+                                        <p>7+</p>
+                                    </div>
+                                </div>
+
+                                <div class = "movie-synopsis">
+                                    <p>
+                                        Riley, 11 tahun, pindah ke San Francisco, 
+                                        meninggalkan hidupnya di Minnesota. 
+                                        Dia dan lima emosi dalam dirinya, 
+                                        Fear, Anger, Joy, Disgust dan Sadness, 
+                                        merasa kesulitan menghadapi kehidupan barunya.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class = "right-desc">
+                                <p class = "tulisan-pemeran">Pemeran</p>
+                                <div class = "pemeran">
+                                    <p>
+                                        Amy Poehler, Phyllis Smith, Lewis Black, Diane Lane, Kyle MacLachlan, lainnya
+                                    </p>
+                                </div>
+
+                                <p class = "tulisan-genre">Genre</p>
+                                <div class = "genre">
+
+                                    <p>
+                                        Animasi, Film Anak, Komedi, Drama
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button id="close-information" class="close-btn">&#10006;</button>
+            </div>
+
+        </div>
+        
+
+
+        <div class="overlay-content" id = 'inside-out-logo-container'>
+            <img src="Asset/logo inside out.png" alt="Inside Out Logo" id = "inside-out-logo">
+        </div>
+
+        <div class="customPlay-controls" id = "custom-play-button">
+            <span>
+
+            </span>
+            <div class = "play-control" id = "play-pause">
+                <img src = "Asset/play-buttton.png" class = "play-button">
+                <button>PLAY</button>
+            </div>
+        </div>
+
+        <div class="customInfo-controls" id = "custom-info-button">
+            <span>
+
+            </span>
+            <div class = "information-control" id="more-information">
+                <img src = "Asset/info-button.png">
+                <button>MORE INFO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- UPCOMING MOVIE DISINI -->
+    <div class = "upcoming-container">
+        <p class = "upcoming-title">TOP 5 UPCOMING MOVIES</p>
+
+        <div class = "movie-list">
+            <div class="monkey-more-container">
+                <div class="monkey-more-poster" id = "monkey-more-poster">
+                    <img src="Asset/monkey man poster.webp">
+                </div>
+                
+                <span id="monkey-more-pop-up">
+                    <div class = "monkey-pop-up-poster">
+                        <img src = "Asset/monkey man poster.webp">
+                    </div>
+                    <div class = "monkey-pop-up-navigation">
+                        <div class = "monkey-pop-up-info">
+                            <p class = "monkey-movie-title">MONKEY MAN</p>
+                            <p class = "monkey-movie-duration">2j 0m</p>
+                            <p class = "monkey-minimum-age">17+</p>
+                        </div>
+
+                        <div class = "monkey-pop-up-more-info" id = "monkey-pop-up-more-info">
+                            <img src = "Asset/drop-down.png">
+                        </div>
+                        
+                    </div>
+                </span>
+            </div>
+
+
+            <div class="despicable-more-container">
+                <div class="despicable-more-poster" id = "despicable-more-poster">
+                    <img src="Asset/despicable me 4 poster.jpg">
+                </div>
+                
+                <span id="despicable-more-pop-up">
+                    <div class = "despicable-pop-up-poster">
+                        <img src = "Asset/despicable me 4 poster.jpg">
+                    </div>
+                    <div class = "despicable-pop-up-navigation">
+                        <div class = "despicable-pop-up-info">
+                            <p class = "despicable-movie-title">DESPICABLE ME 4</p>
+                            <p class = "despicable-movie-duration">???m</p>
+                            <p class = "despicable-minimum-age">7+</p>
+                        </div>
+
+                        <div class = "despicable-pop-up-more-info" id = "despicable-pop-up-more-info">
+                            <img src = "Asset/drop-down.png">
+                        </div>
+                        
+                    </div>
+                </span>
+            </div>
+
+            <div class="apes-more-container">
+                <div class="apes-more-poster" id = "apes-more-poster">
+                    <img src="Asset/planet of apes poster.webp">
+                </div>
+                
+                <span id="apes-more-pop-up">
+                    <div class = "apes-pop-up-poster">
+                        <img src = "Asset/planet of apes poster.webp">
+                    </div>
+                    <div class = "apes-pop-up-navigation">
+                        <div class = "apes-pop-up-info">
+                            <p class = "apes-movie-title">KINGDOM OF THE PLANET OF THE APES</p>
+                            <p class = "apes-movie-duration">???m</p>
+                            <p class = "apes-minimum-age">13+</p>
+                        </div>
+
+                        <div class = "apes-pop-up-more-info" id = "apes-pop-up-more-info">
+                            <img src = "Asset/drop-down.png">
+                        </div>
+                        
+                    </div>
+                </span>
+            </div>
+
+            <div class="garfield-more-container">
+                <div class="garfield-more-poster" id = "garfield-more-poster">
+                    <img src="Asset/garfield poster.avif">
+                </div>
+                
+                <span id="garfield-more-pop-up">
+                    <div class = "garfield-pop-up-poster">
+                        <img src = "Asset/garfield poster.avif">
+                    </div>
+                    <div class = "garfield-pop-up-navigation">
+                        <div class = "garfield-pop-up-info">
+                            <p class = "garfield-movie-title">THE GARFIELD MOVIE</p>
+                            <p class = "garfield-movie-duration">2j 0m</p>
+                            <p class = "garfield-minimum-age">SU</p>
+                        </div>
+
+                        <div class = "garfield-pop-up-more-info" id = "garfield-pop-up-more-info">
+                            <img src = "Asset/drop-down.png">
+                        </div>
+                        
+                    </div>
+                </span>
+            </div>
+
+            <div class="sonic-more-container">
+                <div class="sonic-more-poster" id = "sonic-more-poster">
+                    <img src="Asset/sonic poster.jpg">
+                </div>
+                
+                <span id="sonic-more-pop-up">
+                    <div class = "sonic-pop-up-poster">
+                        <img src = "Asset/sonic poster.jpg">
+                    </div>
+                    <div class = "sonic-pop-up-navigation">
+                        <div class = "sonic-pop-up-info">
+                            <p class = "sonic-movie-title">SONIC THE HEDGEDOG 3</p>
+                            <p class = "sonic-movie-duration">???m</p>
+                            <p class = "sonic-minimum-age">NR</p>
+                        </div>
+
+                        <div class = "sonic-pop-up-more-info" id = "sonic-pop-up-more-info">
+                            <img src = "Asset/drop-down.png">
+                        </div>
+                        
+                    </div>
+                </span>
+            </div>
+            
+        </div>
+
+
+
+        <!-- hover mulai dari sini -->
+
+        <div id = "monkey-man" class = "iklan">
+            <div class = "iklan-bungkus">
+                <div class = "trailer-inside">
+                    <video muted id="monkey-man-trailer" class="trailer-movie"  controls>
+                        <source src="Asset/Monkey Man Trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "inside-out-description">
+                    <div class = "description-container">
+                        <div class = "left-desc">
+                            <div class = "movie-year-duration">
+                                <p>April 2024</p>
+                                <p>2j 0m</p>
+                            </div>
+
+                            <div class = "min-age-rating">
+                                <div class = "min-age-border">
+                                    <p>17+</p>
+                                </div>
+                            </div>
+
+                            <div class = "movie-synopsis">
+                                <p>
+                                    Seorang pemuda misterius melancarkan kampanye balas 
+                                    dendam terhadap para pemimpin korup yang membunuh 
+                                    ibunya dan terus menjadikan masyarakat miskin 
+                                    tidak berdaya sebagai korban secara sistematis.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class = "right-desc">
+                            <p class = "tulisan-pemeran">Pemeran</p>
+                            <div class = "pemeran">
+                                <p>
+                                    Dev Patel, Sharlto Copley, Sobhita Dhulipala, 
+                                    Adithi Kalkunte, Sikandar Kher, Pitobash, Brahim 
+                                    Chab, Vipin Sharma, Nagesh Bhonsle, Anup J. Patel, 
+                                    Jino A. Samuel
+                                </p>
+                            </div>
+
+                            <p class = "tulisan-genre">Genre</p>
+                            <div class = "genre">
+
+                                <p>
+                                    Action, Thriller
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="monkey-close-information" class="close-btn">&#10006;</button>
+        </div>
+
+
+        <div id = "despicable-me" class = "iklan">
+            <div class = "iklan-bungkus">
+                <div class = "trailer-inside">
+                    <video muted id="despicable-me-trailer" class="trailer-movie"  controls>
+                        <source src="Asset/despicable me 4 trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "inside-out-description">
+                    <div class = "description-container">
+                        <div class = "left-desc">
+                            <div class = "movie-year-duration">
+                                <p>July 2024</p>
+                                <p>???m</p>
+                            </div>
+
+                            <div class = "min-age-rating">
+                                <div class = "min-age-border">
+                                    <p>7+</p>
+                                </div>
+                            </div>
+
+                            <div class = "movie-synopsis">
+                                <p>
+                                    Gru hidup bersama Lucy, putranya kandungnya, 
+                                    tiga anak adopsi, dan para minion. Keluarga 
+                                    mereka terlihat sangat bahagia. Namun, keadaan 
+                                    berubah ketika penjahat bernama Maxime Le Mal 
+                                    dikabarkan kabur dari penjara.
+                                    <br><br>
+                                    Maxime Le Mal kabur bersama kekasihnya, Valentina. 
+                                    Mereka berencana ingin balas dendam kepada Gru. 
+                                    Tanpa disadari, Gru juga tengah memiliki misi 
+                                    kejahatan baru yang melibatkan anaknya.
+                                    <br><br>
+                                    Seiring berjalannya waktu, Gru tersadar 
+                                    bahwa mengenalkan dunia kejahatan kepada 
+                                    anaknya justru akan membawa bahaya lain. 
+                                    Sebagai orang tua, Gru harus bertanggung jawab 
+                                    atas keamanan keluarganya.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class = "right-desc">
+                            <p class = "tulisan-pemeran">Pemeran</p>
+                            <div class = "pemeran">
+                                <p>
+                                    Steve Carell, Kristen Wiig, Will Ferrell, 
+                                    Pierre Coffin, Joey King, Sofia Vergara, 
+                                    Stephen Colbert, Miranda Cosgrove, Chloe Fineman, 
+                                    Steve Coogan, Chris Renaud, Dana Gaier, Madison Polan
+                                </p>
+                            </div>
+
+                            <p class = "tulisan-genre">Genre</p>
+                            <div class = "genre">
+
+                                <p>
+                                    Animasi, Komedi, Petualangan
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="despicable-close-information" class="close-btn">&#10006;</button>
+        </div>
+
+        <div id = "apes" class = "iklan">
+            <div class = "iklan-bungkus">
+                <div class = "trailer-inside">
+                    <video muted id="apes-trailer" class="trailer-movie"  controls>
+                        <source src="Asset/apes trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "inside-out-description">
+                    <div class = "description-container">
+                        <div class = "left-desc">
+                            <div class = "movie-year-duration">
+                                <p>May 2024</p>
+                                <p>???m</p>
+                            </div>
+
+                            <div class = "min-age-rating">
+                                <div class = "min-age-border">
+                                    <p>13+</p>
+                                </div>
+                            </div>
+
+                            <div class = "movie-synopsis">
+                                <p>
+                                    Many years after the reign of Caesar, 
+                                    a young ape goes on a journey that will 
+                                    lead him to question everything he's been 
+                                    taught about the past and make choices 
+                                    that will define a future for apes and 
+                                    humans alike.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class = "right-desc">
+                            <p class = "tulisan-pemeran">Pemeran</p>
+                            <div class = "pemeran">
+                                <p>
+                                    Freya Allan, William H., MacyDichen Lachman etc.
+                                </p>
+                            </div>
+
+                            <p class = "tulisan-genre">Genre</p>
+                            <div class = "genre">
+
+                                <p>
+                                    Action, Fantasy, Thriller
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="apes-close-information" class="close-btn">&#10006;</button>
+        </div>
+
+        <div id = "garfield" class = "iklan">
+            <div class = "iklan-bungkus">
+                <div class = "trailer-inside">
+                    <video muted id="garfield-trailer" class="trailer-movie"  controls>
+                        <source src="Asset/garfield trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "inside-out-description">
+                    <div class = "description-container">
+                        <div class = "left-desc">
+                            <div class = "movie-year-duration">
+                                <p>May 2024</p>
+                                <p>2j 0m</p>
+                            </div>
+
+                            <div class = "min-age-rating">
+                                <div class = "min-age-border">
+                                    <p>SU</p>
+                                </div>
+                            </div>
+
+                            <div class = "movie-synopsis">
+                                <p>
+                                    Garfield is about to go on a wild outdoor adventure. After an unexpected reunion with his long-lost father - the cat Vic - Garfield and Odie are forced to abandon their pampered life to join Vic in a hilarious, high-stakes heist.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class = "right-desc">
+                            <p class = "tulisan-pemeran">Pemeran</p>
+                            <div class = "pemeran">
+                                <p>
+                                    Chris Pratt, Samuel L. Jackson, Hannah Waddingham etc.
+                                </p>
+                            </div>
+
+                            <p class = "tulisan-genre">Genre</p>
+                            <div class = "genre">
+
+                                <p>
+                                    Animation, Comedy
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="garfield-close-information" class="close-btn">&#10006;</button>
+        </div>
+
+        <div id = "sonic" class = "iklan">
+            <div class = "iklan-bungkus">
+                <div class = "trailer-inside">
+                    <video muted id="sonic-trailer" class="trailer-movie"  controls>
+                        <source src="Asset/sonic teaser.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "inside-out-description">
+                    <div class = "description-container">
+                        <div class = "left-desc">
+                            <div class = "movie-year-duration">
+                                <p>December 2024</p>
+                                <p>???m</p>
+                            </div>
+
+                            <div class = "min-age-rating">
+                                <div class = "min-age-border">
+                                    <p>NR</p>
+                                </div>
+                            </div>
+
+                            <div class = "movie-synopsis">
+                                <p>
+                                    It looks like we don't have any synopsis for this title yet.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class = "right-desc">
+                            <p class = "tulisan-pemeran">Pemeran</p>
+                            <div class = "pemeran">
+                                <p>
+                                    Ben Schwartz, Colleen O'Shaughnessey, Idris Elba etc.
+                                </p>
+                            </div>
+
+                            <p class = "tulisan-genre">Genre</p>
+                            <div class = "genre">
+
+                                <p>
+                                    Unknown
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="sonic-close-information" class="close-btn">&#10006;</button>
+        </div>
+
+
+
+    </div>
+
+    <!-- VIEW MORE -->
+
+    <!-- Add a container for the new movie -->
+    <div id="new-movie" class="another-new-movie">
+        <p>RECOMMENDED MOVIES</p>
+        <div class = "col-1">
+            <div class = "poster-img"> 
+                <img src = "Asset/1-rebelmoon.jpg" id = "view-more-img"> 
+                <div class="caption">
+                    <div class = "isi-caption">
+                        Rebel Moon
+                    </div>
+                </div>
+            </div>
+            <div class = "poster-img"> 
+                <img src = "Asset/2-missionimpossible.jpg" id = "view-more-img">
+                <div class="caption">
+                    <div class = "isi-caption">
+                        Mission: Impossible - Dead Reckoning Part One
+                    </div>
+                </div>
+            </div>
+            <div class = "poster-img"> 
+                <img src = "Asset/3-dune.jpg" id = "view-more-img"> 
+                <div class="caption">
+                    <div class = "isi-caption">
+                        Dune : Part Two
+                    </div>
+                </div>
+            </div>
+            <div class = "poster-img"> 
+                <img src = "Asset/4-oppenheimer.jpg" id = "view-more-img">
+                <div class="caption">
+                    <div class = "isi-caption">
+                        Oppenheimer
+                    </div>
+                </div>
+            </div>
+            <div class = "poster-img"> 
+                <img src = "Asset/5-borderlands.jpg" id = "view-more-img"> 
+                <div class="caption">
+                    <div class = "isi-caption">
+                        Borderlands
+                    </div>
+                </div>
+            </div>
+            <div class = "poster-img"> 
+                <img src = "Asset/6-transformers.jpg" id = "view-more-img"> 
+                <div class="caption">
+                    <div class = "isi-caption">
+                        Rebel Moon
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "col-1">
+            <div class = "poster-img"> <img src = "Asset/7-granturisom.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/8-krave.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/9-wonka.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/10-topgun.jpeg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/11-furiosa.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/12-beekeper.jpg" id = "view-more-img"> </div>
+        </div>
+        <div class = "col-1">
+            <div class = "poster-img"> <img src = "Asset/8-spiderman.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/8-spiderman.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/8-spiderman.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/8-spiderman.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/8-spiderman.jpg" id = "view-more-img"> </div>
+            <div class = "poster-img"> <img src = "Asset/8-spiderman.jpg" id = "view-more-img"> </div>
+        </div>
+    </div>
+
+    <div class = "button-container">
+        <button id="view-more-new-movie"><p id = "show-more-less">RECOMMENDED MOVIES</p></button>
+    </div>
+
+    <!-- FOOTER DISINI -->
+    <footer>
+        <div class="border">
+            <div class="text">
+                <div class = "upper">
+                    <div class="footer">
+                        <a href="#">About Us</a>
+                        <h2>|</h2>
+                        <a href="#">Terms of Use</a>
+                        <h2>|</h2>
+                        <a href="#">Contact Us</a>
+                        <h2>|</h2>
+                        <a href="#">Advertising</a>
+                    </div>
+    
+                    <div class="icon-footer">
+                        <a href="ig"><img src="XXI-Aset/instagram.png" alt="Instagram"></a>
+                        <a href="fb"><img src="XXI-Aset/facebook.png" alt="Facebook"></a>
+                        <a href="meta"><img src="XXI-Aset/meta.png" alt="Meta"></a>
+                        <a href="yt"><img src="XXI-Aset/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                
+                <div class="lower">
+                    <p>© 1999-2012 21Cineplex.com. All materials and contents (texts, graphics, and every attributes) of 21Cineplex or 21Cineplex.com website are copyrights and trademarks of PT Nusantara Sejahtera Raya.Any commercial usage of the materials and contents is forbidden without prior permission from PT Nusantara Sejahtera Raya. There is no other institutions/agencies outside PT Nusantara Sejahtera Raya allowed to use www.21Cineplex.com (21Cineplex website) without prior permission from PT Nusantara Sejahtera Raya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <h1 id = 'h1'><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>v1</h1> -->
+</body>
+</html>
